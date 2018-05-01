@@ -4,7 +4,6 @@
 /dist
 /tmp
 /out-tsc
-*.zip
 
 # dependencies
 /node_modules
@@ -17,11 +16,13 @@
 *.launch
 .settings/
 *.sublime-workspace
-*.iml
 
-# those darn swapfiles
-*swp
-*swo
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
 /.sass-cache
@@ -34,11 +35,8 @@ testem.log
 
 # e2e
 /e2e/*.js
-      /e2e/*.map
+/e2e/*.map
 
 # System Files
 .DS_Store
 Thumbs.db
-
-# yarn
-yarn-error.log
